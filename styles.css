@@ -1,10 +1,200 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Island+Moments&family=Kolker+Brush&family=Marcellus&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Permanent+Marker&family=Playfair+Display+SC:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #353839;
 }
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
 }
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.container__left {
+  background-image: url(imgs/background.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container__left__oding-group {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__left__oding-group img {
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.container__left__oding-group p {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-family: "Marcellus", serif;
+}
+.container__right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP */
+.container__right__top {
+  min-height: 30vh;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Marcellus", serif;
+}
+.container__right__top p:first-of-type {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.container__right__top p:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+.container__right__top p:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* MIDDLE */
+.container__right__middle {
+  min-height: 60vh;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.container__right__middle h2 {
+  margin: 20px;
+  font-family: "Marcellus", serif;
+  color: #023020;
+  text-shadow: -2px 3px 4px grey;
+  font-size: 30px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+  gap: 20px;
+}
+.inputs {
+  position: relative;
+}
+
+.input__field {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+.form__error-message {
+  grid-column: span 2;
+  background-color: #de0a26;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  display: none;
+}
+.form__error-message p {
+  color: #fff;
+}
+.form__error-message i {
+  color: rgb(240, 230, 140);
+}
+.input--state {
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  opacity: 0;
+}
+
+.input__error-message {
+  color: #de0a26;
+  font-size: 11px;
+  margin-top: 3px;
+  opacity: 0;
+}
+.btn__send,
+.btn__reset {
+  min-width: 120px;
+  padding: 8px;
+  background-color: #023020;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  transition: all 0.1s ease;
+}
+
+.btns {
+  grid-column: span 2;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+}
+.btns p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #023020;
+  opacity: 0;
+}
+.btns button:hover {
+  background-color: green;
+}
+
+.btns button:active {
+  background-color: white;
+  color: #353839;
+  border: 1px solid #353839;
+}
+/* BOTTOM */
+.container__right__bottom {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Marcellus", serif;
+}
+.container__right__bottom a {
+  color: #023020;
+  text-decoration: none;
+}
+.container__right__bottom a:hover {
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container__left {
+    min-height: 10vh;
+  }
+  .container__left__oding-group {
+    margin-top: 10px;
+  }
+  .container__right__top {
+    min-height: 10vh;
+  }
+  .container__right__top p:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .container__right__top p:last-of-type {
+    margin-bottom: 10px;
+  }
+  .container__right__middle {
+    min-height: 10vh;
+  }
+  .container__right__bottom {
+    min-height: 5vh;
+  }
+}
+/* <i class="fa-solid fa-circle-check"></i> */
+/* <i class="fa-solid fa-circle-xmark"></i> */

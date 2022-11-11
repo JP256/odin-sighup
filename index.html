@@ -14,11 +14,153 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-    <title>Oding Sign Form</title>
+
+    <title>Odin Sign Form</title>
   </head>
   <body>
-    <p>hello</p>
-    
+    <div class="container">
+      <div class="container__left">
+        <div class="container__left__oding-group">
+          <img src="./imgs/odin-lined.png" alt="oding picture" />
+          <p>JPENA</p>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="container__right__top">
+          <p>
+            This is not a real online service! you know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="container__right__middle">
+          <h2>Let's do this!</h2>
+          <form class="form">
+            <!-- FIRST NAME -->
+            <div class="form__fname">
+              <label for="fname" class="input__label">First Name</label>
+              <div class="inputs">
+                <input
+                  type="text"
+                  id="fname"
+                  class="fname input__field"
+                  name="fname"
+                  placeholder="John"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">
+                Can't contain symbols or numbers.
+              </p>
+            </div>
+            <!-- LAST NAME -->
+            <div class="form__lname">
+              <label for="lname" class="input__label">Last Name</label>
+              <div class="inputs">
+                <input
+                  type="text"
+                  id="lname"
+                  class="lname input__field"
+                  name="lname"
+                  placeholder="Doe"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">
+                Can't contain symbols or numbers.
+              </p>
+            </div>
+            <!-- EMAIL -->
+            <div class="form__email">
+              <label for="email" class="input__label">Email</label>
+              <div class="inputs">
+                <input
+                  type="email"
+                  id="email"
+                  class="email input__field"
+                  name="email"
+                  placeholder="john@doe.com"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">Must follow the format.</p>
+            </div>
+            <!-- PHONE NUMBER -->
+            <div class="form__phone">
+              <label for="phone" class="input__label">Phone Number</label>
+              <div class="inputs">
+                <input
+                  type="text"
+                  id="phone"
+                  class="phone input__field"
+                  name="phone"
+                  placeholder="305-222-1100"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">Must follow the format.</p>
+            </div>
+            <!-- PASSWORD -->
+            <div class="form__password">
+              <label for="password" class="input__label">Password</label>
+              <div class="inputs">
+                <input
+                  type="password"
+                  id="password"
+                  class="password input__field"
+                  name="password"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">
+                Must contain 3 to 10 characters or symbols.
+              </p>
+            </div>
+            <!-- CONFIRM PASSWORD -->
+            <div class="form__password2">
+              <label for="password2" class="input__label"
+                >Confirm Password</label
+              >
+              <div class="inputs">
+                <input
+                  type="password"
+                  id="password2"
+                  class="password2 input__field"
+                  name="password2"
+                />
+                <i class="fa-solid fa-circle-check input--state"></i>
+              </div>
+              <p class="input__error-message">Must match with password.</p>
+            </div>
+            <!-- ERROR MESSAGE -->
+            <div class="form__error-message">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Error: All fields must be filled before submitting the form.
+              </p>
+            </div>
+            <!-- CREATE ACCOUNT -->
+            <div class="btns">
+              <div class="form_button-send">
+                <button type="submit" class="btn__send">Create Account</button>
+                <p>Account Created.</p>
+              </div>
+              <!-- RESET FIELDS -->
+              <div class="form_button-reset">
+                <button type="submit" class="btn__reset">Reset Fields</button>
+                <p>Fields reset.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="container__right__bottom">
+          <p>Already have an account? <a href="#" class="sign-in">Sign In</a></p>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/e80b6bb67b.js"
       crossorigin="anonymous"
