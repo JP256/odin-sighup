@@ -82,6 +82,11 @@ body {
   margin: 20px;
   gap: 20px;
 }
+.input__label,
+.btn__reset,
+.btn__send {
+  cursor: pointer;
+}
 .inputs {
   position: relative;
 }
@@ -102,6 +107,7 @@ body {
 .form__error-message p {
   color: #fff;
 }
+
 .form__error-message i {
   color: rgb(240, 230, 140);
 }
@@ -136,21 +142,28 @@ body {
   gap: 20px;
   justify-content: start;
 }
-.btns p {
-  font-size: 12px;
-  margin-top: 5px;
-  color: #023020;
-  opacity: 0;
-}
 .btns button:hover {
   background-color: green;
 }
-
 .btns button:active {
   background-color: white;
   color: #353839;
   border: 1px solid #353839;
 }
+/* .btns p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #023020;
+  opacity: 0;
+} */
+.form_button-send p,
+.form_button-reset p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #023020;
+  opacity: 0;
+}
+
 /* BOTTOM */
 .container__right__bottom {
   height: 10vh;
@@ -167,6 +180,23 @@ body {
 }
 .container__right__bottom a:hover {
   color: green;
+}
+
+/* FOR JAVASCRIPT */
+.input--correct i {
+  opacity: 1;
+  color: green;
+}
+
+.input--incorrect i {
+  opacity: 1;
+  color: #de0a26;
+}
+.input--incorrect label {
+  color: #de0a26;
+}
+.input--incorrect p {
+  opacity: 1;
 }
 
 @media screen and (max-width: 600px) {

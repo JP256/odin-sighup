@@ -36,7 +36,7 @@
         </div>
         <div class="container__right__middle">
           <h2>Let's do this!</h2>
-          <form class="form">
+          <form class="form" id="form">
             <!-- FIRST NAME -->
             <div class="form__fname">
               <label for="fname" class="input__label">First Name</label>
@@ -51,7 +51,7 @@
                 <i class="fa-solid fa-circle-check input--state"></i>
               </div>
               <p class="input__error-message">
-                Can't contain symbols or numbers.
+                3-15 characters and can't contain symbols or numbers.
               </p>
             </div>
             <!-- LAST NAME -->
@@ -68,7 +68,7 @@
                 <i class="fa-solid fa-circle-check input--state"></i>
               </div>
               <p class="input__error-message">
-                Can't contain symbols or numbers.
+                3-15 characters and can't contain symbols or numbers.
               </p>
             </div>
             <!-- EMAIL -->
@@ -143,12 +143,16 @@
             <!-- CREATE ACCOUNT -->
             <div class="btns">
               <div class="form_button-send">
-                <button type="submit" class="btn__send">Create Account</button>
+                <button type="submit" class="btn__send" id="btn__send">
+                  Create Account
+                </button>
                 <p>Account Created.</p>
               </div>
               <!-- RESET FIELDS -->
               <div class="form_button-reset">
-                <button type="submit" class="btn__reset">Reset Fields</button>
+                <button type="reset" class="btn__reset" id="btn__reset">
+                  Reset Fields
+                </button>
                 <p>Fields reset.</p>
               </div>
             </div>
@@ -156,7 +160,9 @@
         </div>
 
         <div class="container__right__bottom">
-          <p>Already have an account? <a href="#" class="sign-in">Sign In</a></p>
+          <p>
+            Already have an account? <a href="#" class="sign-in">Sign In</a>
+          </p>
         </div>
       </div>
     </div>
